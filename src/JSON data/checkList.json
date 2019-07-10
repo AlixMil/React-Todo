@@ -1,0 +1,27 @@
+[
+  {
+    "text": "Buy Milk",
+    "done": false,
+    "checked": false
+  },
+  {
+    "text": "Buy Bike",
+    "done": false,
+    "checked": false
+  },
+  {
+    "text": "Catch bug",
+    "done": false,
+    "checked": false
+  },
+  {
+    "text": "Finish todolist",
+    "done": false,
+    "checked": false
+  },
+  {
+    "text": "Start adventure",
+    "done": false,
+    "checked": false
+  }
+]
