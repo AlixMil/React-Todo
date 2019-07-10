@@ -32,6 +32,7 @@ h1 {
 ul, li {
   width: 100%;
   list-style: none;
+  user-select: none;
 }
 
 li {

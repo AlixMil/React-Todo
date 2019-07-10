@@ -25,8 +25,16 @@ function App() {
 
 // Code action check task
 
+  const handleSelect = (e) => {
+    if (e.target !== undefined) {
+      e.target.classList.toggle('selected');
+    } else {
+      console.log(e);
+    }
+  }
+
   const handleClose = (e, index) => {
-    e.target.classList.toggle('selected');
+    handleSelect(e);
     setTodos((state) => {
       const newState = [...state];
       if (newState[index].checked === false) {
@@ -42,11 +50,9 @@ function App() {
 
   const handleDelete = (index) => {
     setTodos((state) => {
-      // state.splice(index, 1);
-      const newState = state.filter(() => {
-        
-      })
-      return newState
+      const sliceState = state.slice(0);
+      sliceState.splice(index, 1);
+      return sliceState
     })
   }
 
@@ -63,7 +69,14 @@ function App() {
 
 // Code accepted check action
 
-  const handleAccept = (value) => {
+  const handleAccept = () => {
+    setTodos((state) => {
+      const modifyArray = state.filter((obj) => {
+        return obj.checked !== true;
+      })
+      handleSelect(modifyArray)
+      return modifyArray
+    })
     
   }
 
