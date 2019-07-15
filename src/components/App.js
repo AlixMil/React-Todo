@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import MakeDo from '../components/MakeDo';
 import List from '../components/List';
 import BottomInputs from '../components/BottomInputs';
